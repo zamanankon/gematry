@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- tailwind link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+  <title>geometry</title>
+</head>
+  <div class="navbar bg-base-100 shadow-2xl">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl">(Interactive) 
+        Geometry Genius</a>
+    </div>
+    <div class="flex-none">
+     <button onclick="location.href='/blogs.html'" class="btn btn-block">Blogs</button>
+    </div>
+  </div>
+</nav>
+  </header>
+  
+  <main>
+    <section class="lg:flex md:flex">
+    <div class="grid grid-cols-1 lg:grid-cols-3  w-[70%] md:grid-cols-1">
+
+    <div class="card w-96 bg-base-100 shadow-xl  lg:mt-24 mt-5 bg-secondary lg:ml-24 ml-16 ">
+      <figure class="px-10 pt-10">
+        <img src="/geometry-genius/images/triangle.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Triangle</h2>
+        <p>Area(A)=0.5xbxh</p>
+        <div>
+           <input  id="input-triangleOne" class="w-24" type="text" placeholder="base">
+           <input  id="input-triangleTwo" class="w-24" type="text" placeholder="hight">
+        </div>
+        <div class="card-actions">
+          <button  id="triangle-btn" class="btn btn-primary">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-xl  lg:mt-24 mt-5 bg-secondary  lg:ml-24 ml-16 ">
+      <figure class="px-10 pt-10">
+        <img src="/geometry-genius/images/rectangle.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Rectangle</h2>
+        <p>Area(A)=wx1</p>
+        <div>
+           <input id="rectangle-inputOne" class="w-24" type="text" placeholder="length">
+           <input  id="rectangle-inputTow" class="w-24" type="text" placeholder="width">
+        </div>
+        <div class="card-actions">
+          <button class="btn btn-primary" id="rectangle-btn">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-xl  lg:mt-24 mt-5  bg-secondary lg:ml-24 ml-16 ">
+      <figure class="px-10 pt-10">
+        <img src="/geometry-genius/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">parallelogram</h2>
+        <p>Area(A)=bxh</p>
+        <p>b=10cm,h=12cm</p>
+        <div>
+           <input id="parallelogramOne-input" class="w-24" type="text" placeholder="base">
+           <input id="parallelogramTwo-input" class="w-24" type="text" placeholder="hight">
+        </div>
+        <div class="card-actions">
+          <button id="parallelogram-btn" class="btn btn-primary">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card w-96 bg-base-100 shadow-xl  lg:mt-5 mt-5 bg-secondary  lg:ml-24 ml-16 ">
+      <figure class="px-10 pt-10">
+        <img src="/geometry-genius/images/rhombus.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Rhombus</h2>
+        <p>Area(A)=0.5xd <sub>2</sub>xd <sub>2</sub></p>
+        <p>d <sub>2</sub>=16cm d <sub>2</sub>=8cm</p>
+        <div>
+           <input id="rhombusOne-input" class="w-24" type="text" placeholder="Diagonal">
+           <input id="rhombusTwo-input" class="w-24" type="text" placeholder="Diagonal">
+        </div>
+        <div class="card-actions">
+          <button id="rhombus-btn" class="btn btn-primary">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-xl  lg:mt-5 mt-5 bg-secondary lg:ml-24 ml-16  ">
+      <figure class="px-10 pt-10">
+        <img src="/geometry-genius/images/pentagon.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Pentagon</h2>
+        <p>Area(A)=0.5xpxb</p>
+        <p>p=6m,b=10cm</p>
+        <div>
+           <input id="PentagonOne-input" class="w-24 text-center" type="" placeholder="Side">
+        </div>
+        <div class="card-actions">
+          <button id="Pentagon-btn" class="btn btn-primary">Calculate</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-xl lg:mt-5 mt-5 bg-secondary  lg:ml-24 ml-16 ">
+      <figure class="px-10 pt-10">
+        <img src="/geometry-genius/images/ellipse.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">Ellipse</h2>
+        <p>Area(A)=πab</p>
+        <p>a=10cm,b=4cm</p>
+        <div>
+           <input id="EllipseOne-input" class="w-24" type="text" placeholder="Axis">
+           <input id="EllipseTwo-input" class="w-24" type="text" placeholder="Axis">
+        </div>
+        <div class="card-actions">
+          <button id="Ellipse-btn" class="btn btn-primary">Calculate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-x-auto">
+    <table class="table lg:ml-[35%] md:mr-96 ml-[23%]">
+      <!-- head -->
+     
+      <tbody id="table-container">
+        <h1 class="text-center lg:ml-[17%] ml-16 mt-6 lg:mt-20">Area Calculation</h1>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Shapes</th>
+            <th>Answer</th>
+            <th>Convert</th>
+          </tr>
+        </thead>
+       
+      </tbody>
+    </table>
+  </div>
+</section>
+  </main>
+  <!-- javascript link -->
+  <script src="/geo.js"></script>
+</body>
+</html>

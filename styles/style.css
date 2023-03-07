@@ -1,0 +1,11 @@
+.card:hover{
+    background-color: rgb(189, 61, 189);
+    color: white;
+    transition: 2s;
+}
+.total{
+   margin-bottom: 300%;
+}
+.total-card{
+    margin-right: 400px;
+}
